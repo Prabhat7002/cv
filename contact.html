@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h3>My Contact Details:</h3>
@@ -13,15 +14,15 @@
     <p>Address: Sonipat, Haryana</p>
     <hr>
     <h3>Add your Contact:</h3>
-    <form action="mailto:sharmaprabhat701@gmail.com" method="post">
-        <label for="">Your Name: </label>
+    <form action="mailto:sharmaprabhat701@gmail.com" method="post" enctype="text/plain">
+        <label name="yourName" for="">Your Name: </label>
         <input type="text"><br> <br>
-        <label for="">Your Email: </label>
+        <label name="yourEmail" for="">Your Email: </label>
         <input type="email"><br> <br>
         <label for="">Your Phone: </label>
-        <input type="number"><br> <br>
+        <input name="yourPhone" type="number"><br> <br>
         <label for="">Your Message: </label><br>
-        <textarea name = "name", rows="10", cols="30"> </textarea><br><br>
+        <textarea name = "yourMessage", rows="10", cols="30"> </textarea><br><br>
         <input type="submit">
     </form>
 </body>
